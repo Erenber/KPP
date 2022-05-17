@@ -24,7 +24,7 @@ public class DemoApplicationTests {
 	@Autowired
 	private TestRestTemplate restTemplate;
 
-    //тест на правильный подсчет периметра
+   
 	@Test
 	public void checkPerimeter(){
 		TriangleInfo tet = triangleController.calculateSquareAndPerimeter(3,4,5);
@@ -32,7 +32,7 @@ public class DemoApplicationTests {
 		assertThat(tet.getPerimeter()).isEqualTo(12);
 	}
 
-	//тест на правильный подсчет площади
+	
 	@Test
 	public void checkSquare(){
 		TriangleInfo tet = triangleController.calculateSquareAndPerimeter(3,4,5);
